@@ -22,6 +22,7 @@
   --filter-btn-team-section-bg-color: #F5F4FA;
   --primary-border-color: #EEEEEE;
   --header-border-color: #ECECEC;
+  --social-icons-color: #AFB1B8;
 }
 
 body {
@@ -167,12 +168,27 @@ ul {
   margin-left: auto;
 }
 
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
 /* .auth .item {
   margin-right: 50px;
 } */
 
 .auth .item + .item {
   margin-left: 50px;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: var(--secondary-additional-color);
+}
+
+.icon:hover,
+.icon:focus {
+  fill: var(--accent-color);
 }
 
 .auth a {
@@ -192,9 +208,16 @@ ul {
 /* hero */
 
 .hero {
+  max-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: var(--secondary-bg-color);
   background-image: url('../images/Vector.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 200px 0;
 }
 
@@ -283,6 +306,22 @@ ul {
   margin-left: 30px;
 }
 
+.feature-item {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 30px;
+
+ width: 270px;
+ height: 120px;
+
+ background-color: var(--filter-btn-team-section-bg-color);
+ border-radius: 4px;
+}
+
+.feature-icon {
+  fill: var(--primary-text-color);
+}
 
 .feature-list .title {
   margin-bottom: 10px;
@@ -354,10 +393,70 @@ ul {
 }
 
 .member-possition {
+  margin-bottom: 16px;
+
   color: var(--secondary-additional-color);
 
   font-size: 16px;
   line-height: 1.18;
+}
+/* members-icons */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: none;
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: var(--social-icons-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--secondary-color);
+}
+
+/* clients */
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: solid 1px var(--social-icons-color);
+    border-radius: 4px;
+    fill: var(--social-icons-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* footer */
@@ -417,6 +516,7 @@ ul {
 .contacts:focus {
   color: var(--accent-color);
 }
+
 
 /* portfolio styles */
 
