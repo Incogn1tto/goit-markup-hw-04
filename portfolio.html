@@ -23,8 +23,15 @@
           </ul>
         </nav>
         <ul class="auth list">
-          <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a class="contact-link" href="mailto:info@devstudio.com"><svg class="icon" width="16px" height="12px">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+    
+          <li class="item"><a class="contact-link" href="tel:+380961111111"><svg class="icon" width="10px" height="16px">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -112,16 +119,51 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo"><span class="footer-logo-web">Web</span>Studio</a>
-        <address class="footer-address">
-          <ul class="contact-list list">
-            <li><a href="https://goo.gl/maps/o2TQQZk8zwePnfFG6" rel="noopener nofollow noreferrer" target="_blank"
-                class="address">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
+      <div class="container ftr-cont">
+        <div class="footer-address">
+          <a href="./index.html" class="footer-logo"><span class="footer-logo-web">Web</span>Studio</a>
+          <address>
+            <ul class="contact-list list">
+              <li><a href="https://goo.gl/maps/o2TQQZk8zwePnfFG6" rel="noopener nofollow noreferrer" target="_blank"
+                  class="address">м. Київ,
+                  пр-т Лесі Українки,
+                  26</a></li>
+              <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+              <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="socials">
+          <p class="socials-title">
+            приєднуйтесь
+          </p>
+          <ul class="list socials-list">
+            <li class="social-item">
+              <a class="social-link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                aria-label="instagram icon"><svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                aria-label="twitter icon"><svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                aria-label="facebook icon"><svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                aria-label="linkedin icon"><svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg></a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
