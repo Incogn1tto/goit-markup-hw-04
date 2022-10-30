@@ -458,8 +458,6 @@ ul {
 /* footer */
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   align-items: baseline;
   background-color: var(--secondary-bg-color);
 }
@@ -468,6 +466,11 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.footer-address {
+  padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-web {
@@ -524,6 +527,8 @@ ul {
 .socials {
   align-items: flex-start;
   margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .socials-title {
